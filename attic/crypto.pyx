@@ -17,7 +17,7 @@ cdef extern from "openssl/evp.h":
     ctypedef struct EVP_CIPHER:
         pass
     ctypedef struct EVP_CIPHER_CTX:
-        unsigned char *iv
+        unsigned char[16] iv
         pass
     ctypedef struct ENGINE:
         pass
